@@ -1,27 +1,39 @@
-#container {
-  text-align: center;
+.compassContainer {
+  background-color: red;
+  height: 40vw;
+  width: 40vw;
+  background: url(../../assets/compassone.png);
+  background-size: 100%;
+  margin: auto;
+  border: 2px solid black;
+  margin-top: 0px;
+  margin-top: 194px;
+  position: relative;
+}
 
+.needleone {
+  // height: 120px;
+  // width: 150px;
+  height: 15%;
+  width: 35%;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  transform: rotateY(98deg) rotateZ(40deg);
+  // height: 17%;
+  // width: 135px;
+  height: 13%;
+  width: 30%;
+  position: absolute;
+  transform: rotateY(98deg) rotateZ(43deg);
+  background-image: linear-gradient(
+    to top left,
+    #0e25f3 51%,
+    #5021f8 40%,
+    #d11b1b 50%,
+    #e41313 91%
+  );
+  // top: 36%;
+  // right: 31%;
+  top: 30%;
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+  left: 35%;
 }
