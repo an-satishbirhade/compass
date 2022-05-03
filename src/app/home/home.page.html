@@ -1,4 +1,12 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Compass</ion-title>
+  </ion-toolbar>
+</ion-header>
 <ion-content>
-  <div class="compassContainer"></div>
-  <div class="needleone"></div>
+  <div id="container">
+    <p>{{(!!magnetometerData ? magnetometerData.magneticHeading : 0)}}°</p>
+    <img src="assets/compass.png" width="200em" [ngStyle]="{'transform': 'rotate('+(!!magnetometerData ? magnetometerData.magneticHeading*-1 : 0)+'deg)'}">
+  </div>
+  <h1>Direction: {{direction}}</h1>
 </ion-content>
